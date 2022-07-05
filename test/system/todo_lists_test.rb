@@ -34,10 +34,4 @@ class TodoListsTest < ApplicationSystemTestCase
     click_on "Back"
   end
 
-  test "should destroy Todo list" do
-    visit todo_list_url(@todo_list)
-    click_on "Destroy this todo list", match: :first
-
-    assert_text "Todo list was successfully destroyed"
-  end
 end
